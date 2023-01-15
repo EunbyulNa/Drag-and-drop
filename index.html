@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;900&family=Maven+Pro:wght@600;700;900&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Drag and Drop</title>
+  </head>
+  <body>
+    <h1>Put transportation items into the correct box!</h1>
+    <div class="dragitems-container">
+      <i class="fa fa-plane fa-5x draggable" draggable="true" aria-hidden="true" id="plane"></i>
+      <i class="fa fa-car fa-5x draggable" draggable="true" aria-hidden="true" id="car"></i>
+      <i class="fa fa-bicycle fa-5x draggable" draggable="true" aria-hidden="true" id="bicycle"></i>
+      <i class="fa fa-ship fa-5x draggable" draggable="true" aria-hidden="true" id="ship"></i>
+    </div>
+
+    <div class="dropboxes-container">
+      <div class="dropbox" id="ship">
+          <span class="spans">Ship</span>
+      </div>
+      <div class="dropbox" id="plane">
+        <span class="spans">Plane</span>
+      </div>
+      <div class="dropbox" id="bicycle">
+          <span class="spans">Bicycle</span>
+      </div>
+      <div class="dropbox" id="car">
+          <span class="spans">Car</span>
+      </div>
+    </div>
+
+    <div class="finishMsg">
+      <p>Yay! well done!</p>
+    </div>
+
+
+    <script src="app.js"></script>
+  </body>
+</html>
